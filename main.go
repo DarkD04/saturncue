@@ -18,7 +18,7 @@ type Track struct {
 
 func main() {
 	// Wholesome welcoming message
-	fmt.Println("\033[32mSaturn Cue Maker by darkn 2025\033[0m")
+	fmt.Println("Saturn Cue Maker by darkn 2025")
 
 	// Default values
 	pregap := 1
@@ -48,7 +48,7 @@ func main() {
 	}
 
 	// Free space
-	fmt.Println("")
+	fmt.Println(" ")
 
 	// Find the iso file
 	matches, err := filepath.Glob(filepath.Join(dir, "*.iso"))
@@ -161,5 +161,5 @@ func main() {
 	}
 
 	// Yeah it's done
-	fmt.Printf(fmt.Sprintf("\033[32m\n%s.cue has been generated\033[0m", strings.TrimSuffix(iso, ext)))
+	fmt.Printf(fmt.Sprintf("\n%s.cue has been generated", strings.TrimSuffix(iso, ext)))
 }
