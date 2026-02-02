@@ -161,5 +161,5 @@ func main() {
 	}
 
 	// Yeah it's done
-	fmt.Printf(fmt.Sprintf("\n%s.cue has been generated", strings.TrimSuffix(iso, ext)))
+	fmt.Println("\n" + strings.TrimSuffix(iso, ext) + ".cue has been generated")
 }
